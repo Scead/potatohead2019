@@ -10,6 +10,7 @@ public class PotatoHead
 	private int arms;
 	private String moustache;
 	private int legs;
+	private String ears;
   private String hairColor;
 
 	// add one instance variable
@@ -26,6 +27,7 @@ public class PotatoHead
 		arms = 0;
 		moustache = "null"
 		legs = 0;
+		ears = "no ears";
 
 	}
 
@@ -94,6 +96,14 @@ public class PotatoHead
 	public String getHairColor(){
 	  return hairColor;
 	}
+	public void setEars(String _input){
+	  ears = _input;
+	}
+	
+	public String getEars(){
+	  return ears;
+	}
+	
 	/* String toString()
      @return output
 	*/
@@ -107,6 +117,7 @@ public class PotatoHead
 		output += "\nNumber of Legs: " + legs;
 		output += "\nHair color: " + hairColor;
 		output += "\nHolding Item: " + item;
+		output += "\nEars: " + ears;
 		return output;
 	}
 }
