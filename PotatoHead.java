@@ -10,16 +10,19 @@ public class PotatoHead
 	private int arms;
 	private String moustache;
 	private int legs;
+  private String hairColor;
 
 	// add one instance variable
+	
 
 	// default constructor
 	public PotatoHead()
 	{
 		// initialize ***ALL*** instance variables here
 		hasEyes = false;
-		holdItem = "unkown";
+		holdItem = "unknown";
 		eyeColor = "unknown";
+		hairColor = "unknown";
 		arms = 0;
 		moustache = "null"
 		legs = 0;
@@ -84,6 +87,14 @@ public class PotatoHead
   *  ACCESSOR METHOD
 	*  method to access ***ALL*** instance variables
 	*  you should be adding your new instance variable here
+	*/ 
+	public void setHairColor(String _input){
+	  hairColor = _input;
+	}
+	public String getHairColor(){
+	  return hairColor;
+	}
+	/* String toString()
      @return output
 	*/
 	public String toString()
@@ -94,6 +105,7 @@ public class PotatoHead
 		output += "\nNumber of Arms: " + arms;
 		output += "\nMoustache: " + moustache;
 		output += "\nNumber of Legs: " + legs;
+		output += "\nHair color: " + hairColor;
 		output += "\nHolding Item: " + item;
 		return output;
 	}
