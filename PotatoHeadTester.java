@@ -10,11 +10,13 @@ public class PotatoHeadTester {
 		taterFace.setEyeColor("Red");
 		taterFace.setNumbOfArms(4);
 		taterFace.setNumberOfLegs(5);
+		taterFace.setEars("Has Ears");
 		/*
 		 Accessor Methods
 		 */
 		System.out.println(taterFace.getEyeColor());
 		System.out.println(taterFace.getNumbOfArms());
+		System.out.println(taterFace.getEars());
 		/*
 		 toString() Method
 		 */
