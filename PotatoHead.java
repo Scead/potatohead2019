@@ -10,6 +10,7 @@ public class PotatoHead
 	private int arms;
 	private String moustache;
 	private int legs;
+	private int fingers;
   private String hairColor;
 
 	// add one instance variable
@@ -22,10 +23,13 @@ public class PotatoHead
 		hasEyes = false;
 		holdItem = "unknown";
 		eyeColor = "unknown";
-		hairColor = "unknown";
+    eyes = "";
+    costume = "";
 		arms = 0;
 		moustache = "null"
 		legs = 0;
+		fingers = 0;
+    hairColor = "unknown";
 
 	}
 
@@ -79,9 +83,16 @@ public class PotatoHead
 	public void setNumberOfLegs(int _legs) {
 		legs = _legs;
 	}
+
+	// change instance variable's vlaue
+	public String getNumOfFingers ()
+	{
+		return fingers;
+
 	public String getItem()
 	{
 		return item;
+
 	}
 	/* String toString()
   *  ACCESSOR METHOD
@@ -105,8 +116,10 @@ public class PotatoHead
 		output += "\nNumber of Arms: " + arms;
 		output += "\nMoustache: " + moustache;
 		output += "\nNumber of Legs: " + legs;
+		output += "\nNumber of Fingers: " + fingers;
 		output += "\nHair color: " + hairColor;
 		output += "\nHolding Item: " + item;
+
 		return output;
 	}
 }
